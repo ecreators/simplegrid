@@ -1,6 +1,5 @@
 package mysamples.grid.v1;
 
-import mysamples.common.Action;
 import mysamples.common.udim.UDim;
 import mysamples.common.utils.UIUtils;
 import mysamples.grid.v1.model.Equal;

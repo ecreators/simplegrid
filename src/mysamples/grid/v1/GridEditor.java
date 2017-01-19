@@ -6,9 +6,9 @@ import javafx.collections.FXCollections;
 import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import mysamples.common.EventHandler;
+import mysamples.common.udim.UDim;
 import mysamples.grid.v1.model.CellModel;
 import mysamples.grid.v1.model.Equal;
-import mysamples.common.udim.UDim;
 import mysamples.search.CollectionSearchEngine;
 
 import java.awt.*;

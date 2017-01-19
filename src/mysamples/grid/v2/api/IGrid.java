@@ -1,14 +1,9 @@
 package mysamples.grid.v2.api;
 
 import com.sun.javafx.scene.paint.GradientUtils;
-import mysamples.grid.v1.CellView;
-import mysamples.grid.v1.model.CellModel;
 
 import javax.swing.event.SwingPropertyChangeSupport;
-import javax.swing.plaf.basic.BasicComboBoxUI;
 import java.awt.*;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListenerProxy;
 import java.beans.PropertyChangeSupport;
 import java.util.Collection;
 import java.util.HashMap;

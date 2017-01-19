@@ -1,13 +1,15 @@
 package mysamples.grid.v1;
 
-import mysamples.common.Action;
 import mysamples.common.udim.UDim;
 import mysamples.common.udim.dim2D.size.Size2DInt32;
 import mysamples.grid.v1.model.CellModel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 import static java.lang.Math.*;
 
