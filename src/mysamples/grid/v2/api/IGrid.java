@@ -1,13 +1,12 @@
 package mysamples.grid.v2.api;
 
-import com.sun.javafx.scene.paint.GradientUtils;
-
 import javax.swing.event.SwingPropertyChangeSupport;
 import java.awt.*;
 import java.beans.PropertyChangeSupport;
-import java.util.*;
+import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
-import java.util.function.Function;
+import java.util.Map;
 import java.util.function.Predicate;
 
 import static java.lang.String.format;
@@ -17,11 +16,15 @@ import static java.lang.String.format;
  */
 public interface IGrid<T, UI extends Component> {
 
-    void setDimensions(int columnH, int rowsV);
+    void reloadGrid();
+
+    void setDimensions(int columnCountH, int rowCountV);
 
     default Dimension getDimension() {
         return new Dimension(1, 1);
     }
+
+    ViewDataMapper<T,UI> getDataViewMapper();
 
     void setDataViewMapper(ViewDataMapper<T, UI> mapper);
 
