@@ -1,16 +1,13 @@
-package mysamples.grid;
+package mysamples.grid.v1;
 
 import mysamples.common.Action;
 import mysamples.common.udim.UDim;
 import mysamples.common.udim.dim2D.size.Size2DInt32;
-import mysamples.grid.model.CellModel;
+import mysamples.grid.v1.model.CellModel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static java.lang.Math.*;
 
@@ -139,7 +136,7 @@ public class GridView<T> extends JPanel {
         return getViewportSize();
     }
     
-    private Dimension getViewportSize() {
+    public Dimension getViewportSize() {
         if(scrollable) {
             Dimension childSize = layout.childSize;
             if(childSize != null) {
@@ -168,6 +165,10 @@ public class GridView<T> extends JPanel {
         this.scrollable = scrollable;
     }
     
+    public Rectangle getCellBounds(int column, int row) {
+        return cells.get(new Size2DInt32(column, row)).getBounds();
+    }
+    
     public enum StretchSideMode {
         HORIZONTAL_STRETCH,
         VERTICAL_STRETCH
@@ -191,10 +192,11 @@ public class GridView<T> extends JPanel {
         
         @Override
         public void layoutContainer(Container parent) {
-            Collection<CellView<T>> values      = container.cells.values();
+            Map<UDim, CellView<T>>  cellViews   = container.cells;
+            Collection<CellView<T>> cells       = cellViews.values();
             int                     columnCount = gridEditor.getColumnCount();
             int                     rowCount    = gridEditor.getRowCount();
-            if(container.cells.size() != rowCount * columnCount) {
+            if(cellViews.size() != rowCount * columnCount) {
                 System.out.println("Es wurden zu wenig oder zuviele Zellen erzeugt!");
                 return;
             }
@@ -229,7 +231,7 @@ public class GridView<T> extends JPanel {
                 updateChildSize();
             }
             
-            for (CellView<T> view : values) {
+            for (CellView<T> view : cells) {
                 CellModel<T> model = view.getModel();
                 if(model != null) {
                     

@@ -1,10 +1,10 @@
-package mysamples.grid;
+package mysamples.grid.v1;
 
 import mysamples.common.Action;
 import mysamples.common.udim.UDim;
 import mysamples.common.utils.UIUtils;
-import mysamples.grid.model.Equal;
-import mysamples.grid.model.ISimpleGrid;
+import mysamples.grid.v1.model.Equal;
+import mysamples.grid.v1.model.ISimpleGrid;
 
 import javax.swing.*;
 

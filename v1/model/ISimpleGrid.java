@@ -1,8 +1,7 @@
-package mysamples.grid.model;
+package mysamples.grid.v1.model;
 
-import mysamples.grid.GridEditor;
-import mysamples.grid.GridView;
-import mysamples.grid.PositionViewMapper;
+import mysamples.grid.v1.GridEditor;
+import mysamples.grid.v1.GridView;
 
 /**
  * @author Bjoern Frohberg, mydata GmbH

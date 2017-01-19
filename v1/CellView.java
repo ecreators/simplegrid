@@ -1,7 +1,7 @@
-package mysamples.grid;
+package mysamples.grid.v1;
 
 import mysamples.common.Action;
-import mysamples.grid.model.CellModel;
+import mysamples.grid.v1.model.CellModel;
 import mysamples.common.udim.UDim;
 
 import javax.swing.*;

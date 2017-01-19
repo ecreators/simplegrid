@@ -1,8 +1,8 @@
-package mysamples.grid.model;
+package mysamples.grid.v1.model;
 
 import javafx.beans.value.ObservableValue;
 import mysamples.common.udim.UDim;
-import mysamples.grid.Observable;
+import mysamples.grid.v1.Observable;
 
 import java.util.Objects;
 

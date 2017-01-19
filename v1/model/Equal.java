@@ -1,4 +1,4 @@
-package mysamples.grid.model;
+package mysamples.grid.v1.model;
 
 /**
  * @author Bjoern Frohberg, mydata GmbH

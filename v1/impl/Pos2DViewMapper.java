@@ -1,8 +1,8 @@
-package mysamples.grid.impl;
+package mysamples.grid.v1.impl;
 
 import mysamples.common.udim.UDim;
 import mysamples.common.udim.dim2D.pos.Pos2DInt32;
-import mysamples.grid.PositionViewMapper;
+import mysamples.grid.v1.PositionViewMapper;
 
 /**
  * @author Bjoern Frohberg, mydata GmbH

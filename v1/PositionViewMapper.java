@@ -1,4 +1,4 @@
-package mysamples.grid;
+package mysamples.grid.v1;
 
 import mysamples.common.udim.UDim;
 
