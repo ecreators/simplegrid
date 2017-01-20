@@ -74,7 +74,10 @@ public class DefaultGridLayoutManager implements GridLayoutManager {
                 }
                 // cells
                 else {
-                    IGrid.CellPresenter cell = ((IGrid.CellPresenter) component);
+                    IGrid.CellPresenter cell  = ((IGrid.CellPresenter) component);
+                    int                 index = grid.getIndex(cell.getModel().getCellCoordinate());
+                    x = ?;
+                    y = ?;
                     cell.setBounds(x, y, cellSize.width, cellSize.height);
                 }
             }
